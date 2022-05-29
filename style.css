@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.container div {
+    width: 7.5%;
+    height: 100%;
+    border-radius: 50px;
+    background-position: center;
+    background-size: cover;
+    transition: 1s linear;
+    overflow: hidden;
+    position: relative;
+}
+
+.container div span {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    opacity: 0;
+    transition: 0.7s linear;
+}
+
+.container div.active span {
+    opacity: 1;
+}
+
+.one {
+    background: url('images/img1.png');
+}
+
+.two {
+    background: url('images/img2.png');
+}
+
+.three {
+    background: url('images/img3.png');
+}
+
+.four {
+    background: url('images/img4.png');
+}
+
+.five {
+    background: url('images/img5.png');
+}
+
+.container .active {
+    width: 70%;
+}
